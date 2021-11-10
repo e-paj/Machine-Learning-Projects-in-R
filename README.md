@@ -1,6 +1,6 @@
 # 🎇 Machine Learning Projects 🎇
 
-The aim of this is to showcase Machine Learning Projects that I did!!
+The aim of this is to showcase Machine Learning Projects that I did in R!!
 
 **Legend**:
 - ✔ = project is finished
