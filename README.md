@@ -15,4 +15,4 @@ Following are the projects/case studies I have done in the Machine Learning Fiel
 
 | **Name** | **Description** |
 | :------: | :-------------: |
-| [Uber Analysis]() | Implementation of ggplot library to visualize insights about Uber data. |
+| [Uber Analysis](https://github.com/e-paj/Machine-Learning-Projects-in-R/tree/main/CASE%201:%20Uber%20Analysis) | Implementation of ggplot library to visualize insights about Uber data. |
