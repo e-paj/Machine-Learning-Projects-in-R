@@ -7,6 +7,9 @@ The aim of this is to showcase Machine Learning Projects that I did in R!!
 - ❌ = project is being planned, yet to start.
 - ↔ = project is in motion, not finished
 
+## 💻 R Projects Ideas: 
+- [Data Flair](https://data-flair.training/blogs/machine-learning-datasets/)
+
 ## Case Studies:
 1. Uber Data Analysis ✔
 
