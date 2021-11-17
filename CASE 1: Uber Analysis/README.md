@@ -16,7 +16,7 @@
 - Project in R – Uber Data Analysis Project. (n.d.). Retrived from https://data-flair.training/blogs/r-data-science-project-uber-data-analysis/
 - A whole lot of googling!
 
-**Small Project**: Maybe write a small report detailing the observations from the visuals.
+**Small Project**: Maybe write a small report detailing the observations from the visuals. ✔
 
 ## Plots visualized!!
 
