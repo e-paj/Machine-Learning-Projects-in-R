@@ -4,10 +4,10 @@
 **Objective**:
 
 📅
-**Date**:
+**Date**: Nov. 23
 
 🔢
-**Dataset**:
+**Dataset**: [Kaggle](https://www.kaggle.com/jessemostipak/hotel-booking-demand)
 
 📜
 **References**:
