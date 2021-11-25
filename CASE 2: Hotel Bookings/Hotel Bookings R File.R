@@ -16,8 +16,7 @@ is.null(hotel_demand)
 summary(hotel_demand)
 
 ### 6.) Outlier Detection
-leadTime_summ <- summary(hotel_demand$lead_time)
-leadTime_summ
+summary(hotel_demand$lead_time)
 boxplot(hotel_demand$lead_time, main="Lead-Time Boxplot", xlab="Lead-Time",
         ylab="Lead-Time", col='blue')
 
@@ -43,9 +42,34 @@ lead_len
 (lead_len/length(hotel_demand$lead_time))*100
 
 ### 6.2)  Compute summary statistic of the 'total_of_special_requests' column
-spec_req_summ <- summary(hotel_demand$total_of_special_requests)
-spec_req_summ
-
-# Whisker PLot
+summary(hotel_demand$total_of_special_requests)
 boxplot(hotel_demand$total_of_special_requests, 
         main="Total of Special Requests Boxplot", col="red")
+
+# use function to find the outliers
+spec_outliers <- FindOutliers(hotel_demand$total_of_special_requests)
+spec_len <- length(spec_outliers)
+spec_len
+
+# Percentage out of total length
+(spec_len/length(hotel_demand$total_of_special_requests))*100
+
+### 6.3) Compute summary statistic of the 'stays_in_weekend_nights' column
+summary(hotel_demand$stays_in_weekend_nights)
+boxplot(hotel_demand$stays_in_weekend_nights, 
+        main="Stays in Weekend Nights Boxplot", col="green")
+
+# use function to find outliers
+weekend_outliers<- FindOutliers(hotel_demand$stays_in_weekend_nights)
+weekend_len <- length(weekend_outliers)
+weekend_len
+
+# Percentage out of toal length
+(weekend_len/length(hotel_demand$stays_in_weekend_nights))*100
+# Since this has low percentage of outliers, we can rid of the rows that are outliers
+index <- vector(mode="list", length=265)
+for (i in weekend_outliers){
+  index[i] <- which(hotel_demand$stays_in_weekend_nights == weekend_outliers[i])
+}
+index
+  
