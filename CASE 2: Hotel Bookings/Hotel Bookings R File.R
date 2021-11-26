@@ -64,12 +64,32 @@ weekend_outliers<- FindOutliers(hotel_demand$stays_in_weekend_nights)
 weekend_len <- length(weekend_outliers)
 weekend_len
 
-# Percentage out of toal length
+# Percentage out of total length
 (weekend_len/length(hotel_demand$stays_in_weekend_nights))*100
 # Since this has low percentage of outliers, we can rid of the rows that are outliers
-index <- vector(mode="list", length=265)
-for (i in weekend_outliers){
-  index[i] <- which(hotel_demand$stays_in_weekend_nights == weekend_outliers[i])
-}
-index
+# first save the outliers in a vector
+outliers <- boxplot(hotel_demand$stays_in_weekend_nights, plot=FALSE)$out
+new_hotel_bookings <- 
+  hotel_demand[-which(hotel_demand$stays_in_weekend_nights %in% outliers),]
+dim(new_hotel_bookings)
+
+# Visualize 'stays_in_weekend_nights' column again
+
+boxplot(new_hotel_bookings$stays_in_weekend_nights,
+        main="New Stay in Weekend Nights Boxplot w/o Outliers", col='purple')
+# Have we removed all outliers?
+outliers_weekend <- FindOutliers(new_hotel_bookings$stays_in_weekend_nights)
+length(outliers_weekend)
+
+### 7.) DATA VISUALIZATION
+
+### 7.1) How much in advance are the customers booking before their arrival?
+counts <- data.frame(new_hotel_bookings$lead_time, 
+                     new_hotel_bookings$arrival_date_year)
+colnames(counts) <- c("Lead_Time", "Arrival_Date_Year")
+ggplot(counts, aes(x=Arrival_Date_Year, y=Lead_Time, fill=Arrival_Date_Year)) +
+  geom_bar(stat="identity")+
+  ggtitle("Arrival by Year and Lead Time")
+ 
+
   
