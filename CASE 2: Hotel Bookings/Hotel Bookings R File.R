@@ -151,3 +151,16 @@ ggplot(with_children_data, aes(Month, Percentage, fill=Month)) +
   geom_bar(stat='identity')+
   ggtitle("With Children")+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+
+### 7.5) Plot the number of guests arriving from different countries
+by_country <- new_hotel_bookings %>% group_by(country) %>%
+  dplyr::summarise(Total = n()) %>% arrange(desc(Total), .by_group=TRUE)
+ggplot(by_country, aes(reorder(country, -Total), Total, fill=country))+
+  geom_bar(stat="identity")+
+  ggtitle("Bar Plot of Countries")
+
+# Make a pie chart instead
+ggplot(by_country, aes(country, Total, fill=country))+
+  geom_bar(stat="identity")+
+  coord_polar("y",start=0) +
+  ggtitle("Bar Plot of Countries")
