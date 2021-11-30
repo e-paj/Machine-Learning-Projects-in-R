@@ -165,3 +165,12 @@ ggplot(by_country_20, aes(country, Total, fill=country))+
   geom_bar(stat="identity")+
   coord_polar(theta="y") +
   ggtitle("Pie Chart of Top 20 Countries")
+
+### 7.6) Plot the mean of lead_time bookings that have been canceled
+lead_cancel_data_10 <- new_hotel_bookings %>% group_by(lead_time) %>%
+  summarise(as_tibble(rbind(summary(is_canceled))))
+datatable(lead_cancel_data_10)
+x <- lead_cancel_data_10$lead_time
+y <- (lead_cancel_data_10$Mean)*100
+plot(x, y, main="Eff", xlab="lead_time", ylab="Mean*100", pch=19)
+abline(lm(y~x), col="blue")
