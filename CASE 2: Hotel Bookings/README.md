@@ -19,5 +19,8 @@
 [![Screenshot-241.png](https://i.postimg.cc/m2XPTMbD/Screenshot-241.png)](https://postimg.cc/rK4VJDRX)
 [![Screenshot-242.png](https://i.postimg.cc/YS12LmwQ/Screenshot-242.png)](https://postimg.cc/wtjYSMMB)
 [![Screenshot-243.png](https://i.postimg.cc/wvqztf2d/Screenshot-243.png)](https://postimg.cc/VSVppF27)
-Now the box plot of "stay_in_weekend_nights" column without outliers:
+Now the box plot of "stays_in_weekend_nights" column without outliers:
 [![Screenshot-244.png](https://i.postimg.cc/mrwfG3sp/Screenshot-244.png)](https://postimg.cc/mct6YHh7)
+
+- **
+[![Screenshot-245.png](https://i.postimg.cc/FFJvYLgz/Screenshot-245.png)](https://postimg.cc/grdQ5r7b)
