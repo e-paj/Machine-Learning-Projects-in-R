@@ -1,5 +1,9 @@
 ### 1.) Import important libraries
 library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(DT)
+library(reshape2)
 
 ### 2.) Reading the Data and the size of the dataset
 hotel_demand <- read.csv("~/Data Science/Data/hotel_bookings.csv")
