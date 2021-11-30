@@ -28,5 +28,5 @@ Now the box plot of "stays_in_weekend_nights" column without outliers:
 - **Comparing which type of hotel requires more parking space**:
 [![Screenshot-246.png](https://i.postimg.cc/XY11K2nb/Screenshot-246.png)](https://postimg.cc/ZW3L4x97)
 
-- **Comparing **:
+- **Comparing which year has the higher number of lead_time (Number of days that elapsed between the entering date of the booking into the PMS and the arrival date)**:
 [![Screenshot-247.png](https://i.postimg.cc/d129fncD/Screenshot-247.png)](https://postimg.cc/VrNMrq6c)
