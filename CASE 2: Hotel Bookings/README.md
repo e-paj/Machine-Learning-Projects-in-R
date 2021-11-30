@@ -37,5 +37,9 @@ Now the box plot of "stays_in_weekend_nights" column without outliers:
 
 - **Comparing which country has the highest number of bookings from**:
 [![Screenshot-250.png](https://i.postimg.cc/qBY7YrQh/Screenshot-250.png)](https://postimg.cc/kDQ96k0q)
+
 To see better, I took the Top 20 countries.
 [![Screenshot-251.png](https://i.postimg.cc/ncBQGMZc/Screenshot-251.png)](https://postimg.cc/RNCFMSNj)
+
+- **Checking the mean of cancelled bookings according to "lead_time"**:
+[![Screenshot-252.png](https://i.postimg.cc/CLgKY7TS/Screenshot-252.png)](https://postimg.cc/nM3xGvhP)
