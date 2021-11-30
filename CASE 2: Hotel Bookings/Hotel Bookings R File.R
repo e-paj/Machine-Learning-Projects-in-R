@@ -91,5 +91,18 @@ ggplot(counts, aes(x=Arrival_Date_Year, y=Lead_Time, fill=Arrival_Date_Year)) +
   geom_bar(stat="identity")+
   ggtitle("Arrival by Year and Lead Time")
  
-
+### 7.2) The above visualization does not give us a lot of information, so we can 
+# divide the x-axis into months instead of years 
+by_months <- new_hotel_bookings %>% 
+  group_by(arrival_date_month, arrival_date_year) %>%
+  dplyr::summarise(across(c(adults, children), sum), .groups = "keep")
+by_month <- paste(by_months$arrival_date_month, 
+                  by_months$arrival_date_year, sep=",")
+by_months$Date <- by_month
+by_months <- subset(by_months, select = c("Date", "adults","children"))
+by_months.long <- melt(by_months)
+ggplot(by_months.long, aes(Date, value, fill=variable)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  ggtitle("Adults/Children per Month, Year") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
   
