@@ -1,7 +1,7 @@
 # 🏨 Hotel Bookings 🏨
 
 💡
-**Objective**:
+**Objective**: To gain insights about the demand bookings between two hotels. See which month has the highest number of bookings for families with children and without children; see which type of hotel requires more parking spaces.
 
 📅
 **Date**: Nov. 23
