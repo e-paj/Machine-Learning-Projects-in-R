@@ -22,5 +22,5 @@
 Now the box plot of "stays_in_weekend_nights" column without outliers:
 [![Screenshot-244.png](https://i.postimg.cc/mrwfG3sp/Screenshot-244.png)](https://postimg.cc/mct6YHh7)
 
-- **
+- **Comparing the number of adults and children who stayed in hotels in each month of 
 [![Screenshot-245.png](https://i.postimg.cc/FFJvYLgz/Screenshot-245.png)](https://postimg.cc/grdQ5r7b)
