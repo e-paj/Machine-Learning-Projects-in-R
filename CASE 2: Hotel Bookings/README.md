@@ -12,3 +12,5 @@
 📜
 **References**:
 -https://www.kaggle.com/insatanic/hotel-booking-data-analysis
+
+### Plots visualized in this analysis!
