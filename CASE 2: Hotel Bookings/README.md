@@ -34,3 +34,8 @@ Now the box plot of "stays_in_weekend_nights" column without outliers:
 - **Comparing which type of family has a higher number of bookings per month**:
 [![Screenshot-248.png](https://i.postimg.cc/jdmJzNB1/Screenshot-248.png)](https://postimg.cc/mt3D4cL3)
 [![Screenshot-249.png](https://i.postimg.cc/mrRkwSjm/Screenshot-249.png)](https://postimg.cc/VJGzsn3t)
+
+- **Comparing which country has the highest number of bookings from**:
+[![Screenshot-250.png](https://i.postimg.cc/qBY7YrQh/Screenshot-250.png)](https://postimg.cc/kDQ96k0q)
+To see better, I took the Top 20 countries.
+[![Screenshot-251.png](https://i.postimg.cc/ncBQGMZc/Screenshot-251.png)](https://postimg.cc/RNCFMSNj)
