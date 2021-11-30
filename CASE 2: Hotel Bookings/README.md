@@ -14,3 +14,6 @@
 -https://www.kaggle.com/insatanic/hotel-booking-data-analysis
 
 ### Plots visualized in this analysis!
+
+**Looking for outliers in specific columns**:
+[![Screenshot-241.png](https://i.postimg.cc/m2XPTMbD/Screenshot-241.png)](https://postimg.cc/rK4VJDRX)
