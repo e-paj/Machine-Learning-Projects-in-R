@@ -18,3 +18,4 @@
 - **Looking for outliers in specific columns**:
 [![Screenshot-241.png](https://i.postimg.cc/m2XPTMbD/Screenshot-241.png)](https://postimg.cc/rK4VJDRX)
 [![Screenshot-242.png](https://i.postimg.cc/YS12LmwQ/Screenshot-242.png)](https://postimg.cc/wtjYSMMB)
+[![Screenshot-243.png](https://i.postimg.cc/wvqztf2d/Screenshot-243.png)](https://postimg.cc/VSVppF27)
