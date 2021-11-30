@@ -159,8 +159,9 @@ ggplot(by_country, aes(reorder(country, -Total), Total, fill=country))+
   geom_bar(stat="identity")+
   ggtitle("Bar Plot of Countries")
 
-# Make a pie chart instead
-ggplot(by_country, aes(country, Total, fill=country))+
+# Make a pie chart instead of top 20 countries
+by_country_20 <- by_country[1:20,]
+ggplot(by_country_20, aes(country, Total, fill=country))+
   geom_bar(stat="identity")+
-  coord_polar("y",start=0) +
-  ggtitle("Bar Plot of Countries")
+  coord_polar(theta="y") +
+  ggtitle("Pie Chart of Top 20 Countries")
