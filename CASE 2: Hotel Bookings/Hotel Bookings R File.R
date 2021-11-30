@@ -118,3 +118,36 @@ ggplot(by_hotel, aes(x="",y=required_car_parking_spaces, fill=hotel)) +
   geom_bar(stat="identity",width = 1)+
   ggtitle("Required Car Parking Spaces")+
   coord_polar("y", start=0)
+
+### 7.4) Contrast the arrival timings of adults with children or babies with 
+# that of adults without children or babies
+
+# Finding out the values rows with and without children
+without_children <- subset(new_hotel_bookings, children == 0 & babies == 0)
+with_children <- subset(new_hotel_bookings, children !=0 & babies != 0)
+
+# Calculating what percentage of the total values they form
+without_children_count<- dplyr::count(without_children, arrival_date_month, 
+                                      sort = FALSE)
+without_children_perc <- 
+  (without_children_count$n/sum(without_children_count$n))*100
+with_children_count <- dplyr::count(with_children, arrival_date_month, 
+                                    sort = FALSE)
+with_children_perc <- 
+  (with_children_count$n/sum(with_children_count$n))*100
+
+# Plotting the two bar plots
+without_children_data <- data.frame(without_children_count$arrival_date_month, 
+                                without_children_perc)
+colnames(without_children_data) <- c("Month", "Percentage")
+with_children_data <- data.frame(with_children_count$arrival_date_month, 
+                                 with_children_perc)
+colnames(with_children_data) <- c("Month", "Percentage")
+ggplot(without_children_data, aes(Month, Percentage, fill=Month)) +
+  geom_bar(stat='identity')+
+  ggtitle("Without Children")+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+ggplot(with_children_data, aes(Month, Percentage, fill=Month)) +
+  geom_bar(stat='identity')+
+  ggtitle("With Children")+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
