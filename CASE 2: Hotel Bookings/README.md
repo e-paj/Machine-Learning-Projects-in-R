@@ -30,3 +30,7 @@ Now the box plot of "stays_in_weekend_nights" column without outliers:
 
 - **Comparing which year has the higher number of lead_time (Number of days that elapsed between the entering date of the booking into the PMS and the arrival date)**:
 [![Screenshot-247.png](https://i.postimg.cc/d129fncD/Screenshot-247.png)](https://postimg.cc/VrNMrq6c)
+
+- **Comparing which type of family has a higher number of bookings per month**:
+[![Screenshot-248.png](https://i.postimg.cc/jdmJzNB1/Screenshot-248.png)](https://postimg.cc/mt3D4cL3)
+[![Screenshot-249.png](https://i.postimg.cc/mrRkwSjm/Screenshot-249.png)](https://postimg.cc/VJGzsn3t)
