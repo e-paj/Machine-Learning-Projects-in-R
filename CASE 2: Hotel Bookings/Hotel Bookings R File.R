@@ -110,3 +110,11 @@ ggplot(by_months.long, aes(Date, value, fill=variable)) +
   ggtitle("Adults/Children per Month, Year") +
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
   
+### 7.3) Contrast the number of booking changes in the city hotel 
+# to that in the resort hotel 
+by_hotel <- new_hotel_bookings %>% group_by(hotel) %>%
+  dplyr::summarise(across(c(required_car_parking_spaces), sum))
+ggplot(by_hotel, aes(x="",y=required_car_parking_spaces, fill=hotel)) +
+  geom_bar(stat="identity",width = 1)+
+  ggtitle("Required Car Parking Spaces")+
+  coord_polar("y", start=0)
