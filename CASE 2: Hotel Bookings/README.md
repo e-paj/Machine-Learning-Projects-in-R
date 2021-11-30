@@ -15,5 +15,6 @@
 
 ### Plots visualized in this analysis!
 
-**Looking for outliers in specific columns**:
+- **Looking for outliers in specific columns**:
 [![Screenshot-241.png](https://i.postimg.cc/m2XPTMbD/Screenshot-241.png)](https://postimg.cc/rK4VJDRX)
+[![Screenshot-242.png](https://i.postimg.cc/YS12LmwQ/Screenshot-242.png)](https://postimg.cc/wtjYSMMB)
