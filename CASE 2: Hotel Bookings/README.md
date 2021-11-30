@@ -24,3 +24,6 @@ Now the box plot of "stays_in_weekend_nights" column without outliers:
 
 - **Comparing the number of adults and children who stayed in hotels in each month of 2015-2017**:
 [![Screenshot-245.png](https://i.postimg.cc/FFJvYLgz/Screenshot-245.png)](https://postimg.cc/grdQ5r7b)
+
+- **Comparing which type of hotel requires more parking space**:
+[![Screenshot-246.png](https://i.postimg.cc/XY11K2nb/Screenshot-246.png)](https://postimg.cc/ZW3L4x97)
