@@ -88,12 +88,9 @@ length(outliers_weekend)
 ### 7.) DATA VISUALIZATION
 
 ### 7.1) How much in advance are the customers booking before their arrival?
-counts <- data.frame(new_hotel_bookings$lead_time, 
-                     new_hotel_bookings$arrival_date_year)
-colnames(counts) <- c("Lead_Time", "Arrival_Date_Year")
-ggplot(counts, aes(x=Arrival_Date_Year, y=Lead_Time, fill=Arrival_Date_Year)) +
-  geom_bar(stat="identity")+
-  ggtitle("Arrival by Year and Lead Time")
+ggplot(new_hotel_bookings, aes(x=arrival_date_year, y=lead_time, 
+                               fill=arrival_date_year)) + 
+  geom_bar(stat="identity") + ggtitle("Arrival by Year and Lead Time")
  
 ### 7.2) The above visualization does not give us a lot of information, so we can 
 # divide the x-axis into months instead of years 
