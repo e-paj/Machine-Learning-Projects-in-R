@@ -18,6 +18,9 @@ is.null(hotel_demand)
 
 ### 5.) Statistical Measures 
 summary(hotel_demand)
+meltData <- melt(hotel_demand)
+ggplot(meltData, aes(factor(variable), value)) + 
+  geom_boxplot() + facet_wrap(~variable, scale="free")
 
 ### 6.) Outlier Detection
 summary(hotel_demand$lead_time)
