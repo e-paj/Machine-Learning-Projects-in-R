@@ -2,7 +2,7 @@
 
 💡**Objective**:
 
-📅�**Date**: Dec. 13 -
+📅**Date**: Dec. 13 -
 
 **workflow**:
 
