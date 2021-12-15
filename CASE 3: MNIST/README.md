@@ -1,11 +1,11 @@
 # ✍ MNIST Handwritten Digits ✍
 
-**Objective**:
+💡**Objective**:
 
-**Date**:
+📅�**Date**: Dec. 13 -
 
 **workflow**:
 
-**Data**: http://yann.lecun.com/exdb/mnist/
+🔢**Data**: http://yann.lecun.com/exdb/mnist/
  
-**References**:
+📜**References**:
