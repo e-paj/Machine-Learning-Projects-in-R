@@ -10,3 +10,4 @@
  
 📜**References**:
 - https://www.r-bloggers.com/2018/01/exploring-handwritten-digit-classification-a-tidy-analysis-of-the-mnist-dataset/
+- http://varianceexplained.org/r/digit-eda/
