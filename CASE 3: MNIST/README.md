@@ -4,7 +4,7 @@
 
 📅**Date**: Dec. 13 -
 
-**Workflow**:
+📝**Workflow**:
 
 🔢**Data**: http://yann.lecun.com/exdb/mnist/
  
