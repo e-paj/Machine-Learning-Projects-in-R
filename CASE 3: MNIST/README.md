@@ -1,6 +1,6 @@
 # ✍ MNIST Handwritten Digits ✍
 
-💡**Objective**:
+💡**Objective**: To classify a handwritten digit based on a 28-by-28 black and white image. To train classifiers to recognize digits from images, while using data exploration and visualization to build intuitions about why each method works or doesn’t. 
 
 📅**Date**: Dec. 13 -
 
