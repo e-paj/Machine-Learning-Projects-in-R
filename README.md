@@ -14,7 +14,7 @@ The aim of this is to showcase Machine Learning Projects that I did in R!!
 1. Uber Data Analysis ✔
 2. Bank Term Deposit ❌
 3. Hotel Bookings ✔
-4. MNIST Handwritten ❌
+4. MNIST Handwritten ↔
 
 ## Description:
 Following are the projects/case studies I have done in the Machine Learning Field and its descriptions. 
