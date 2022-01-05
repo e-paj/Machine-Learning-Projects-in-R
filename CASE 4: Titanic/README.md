@@ -2,7 +2,7 @@
 
 **💡 Objective**: To create a model that would predict if a passenger would have survive on the Titanic or not.
 
-**📅 Date**:
+**📅 Date**: January 04 - 
 
 **🔢 Dataset**: https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html
 
