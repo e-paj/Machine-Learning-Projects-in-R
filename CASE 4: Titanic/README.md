@@ -8,3 +8,5 @@
 
 **📜 References**:
 - https://rstudio-pubs-static.s3.amazonaws.com/108845_1dfeb8d88e7640d88a7df3b71e3f6524.html
+
+### Distribution of each attribute
