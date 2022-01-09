@@ -10,9 +10,12 @@
 - https://rstudio-pubs-static.s3.amazonaws.com/108845_1dfeb8d88e7640d88a7df3b71e3f6524.html
 
 ### Distribution of each attribute
-0 = Died, 1 = Survived
+* 0 = Died, 1 = Survived
+* Majority of the passengers died.
 - [![Screenshot-259.png](https://i.postimg.cc/kgMhqjNc/Screenshot-259.png)](https://postimg.cc/YhVxxzsG)
-Most of the passengers are in their 20s.
+* Most of the passengers are in their late teens to their 30s.
 - [![Screenshot-260.png](https://i.postimg.cc/52PK0wnM/Screenshot-260.png)](https://postimg.cc/jD743np8)
+* Majority of the passengers occupied the third class.
 - [![Screenshot-261.png](https://i.postimg.cc/MH8d4tK1/Screenshot-261.png)](https://postimg.cc/XGQfBf5v)
+* There were more female passengers than male ones.
 - [![Screenshot-262.png](https://i.postimg.cc/GtJq1YHV/Screenshot-262.png)](https://postimg.cc/n9rv4XKG)
