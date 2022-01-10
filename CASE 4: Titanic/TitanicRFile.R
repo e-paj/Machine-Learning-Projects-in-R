@@ -66,3 +66,12 @@ ageSurv <- titanic_data %>% group_by(age, Survived) %>%
   summarise(number= n(), .groups="drop") %>%
   mutate(perc = (number/sum(number))*100)
 datatable(ageSurv)
+
+### 8.5) Calculate the proportion of passengers surviving for 
+# each age/sex category (i.e., for adult males, child males, 
+# adult females, child females). Which group was most likely 
+# to survive? Least likely?
+agesexSurv <- titanic_data %>% group_by(age, Sex, Survived) %>%
+  summarise(number= n(), .groups = 'drop') %>%
+  mutate(perc = (number/sum(number))*100)
+datatable(agesexSurv)
