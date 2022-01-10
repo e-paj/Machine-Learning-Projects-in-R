@@ -7,6 +7,13 @@ library(DT)
 titanic_data <- read.csv("~/Data Science/Data/titanic.csv")
 titanic_data
 
+### 2.5) Changing Age attribute to adults = 1, minors = 0
+s <- matrix(nrow=nrow(titanic_data), ncol=1)
+for (i in 1:nrow(titanic_data)) {
+  if (titanic_data$Age[i] > 18) s[i,] <- 1
+  else s[i] <- 0
+}
+
 ### 3.) Dimensions of the data
 dim(titanic_data)
 # there are 887 entries and 8 attributes
