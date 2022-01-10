@@ -58,3 +58,11 @@ sexSurv <- titanic_data %>% group_by(Sex, Survived) %>%
   summarise(number = n(), .groups = "drop") %>%
   mutate(perc = (number/sum(number))*100)
 datatable(sexSurv)
+
+### 8.4) Calculate the proportion of passengers surviving for 
+# each age category. Which age had the lowest survival rate?
+titanic_data$age <- s
+ageSurv <- titanic_data %>% group_by(age, Survived) %>%
+  summarise(number= n(), .groups="drop") %>%
+  mutate(perc = (number/sum(number))*100)
+datatable(ageSurv)
