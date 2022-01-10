@@ -36,3 +36,6 @@ ggplot(titanic_data, aes(Pclass)) + geom_bar(aes(fill=Pclass)) +
   ggtitle("Distribution of Class") 
 ggplot(titanic_data, aes(Sex)) + geom_bar() +
   ggtitle("Number of Females/Males")
+
+### 8.) Calculate the total number of passengers:
+total <- tally(titanic_data)
