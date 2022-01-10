@@ -39,3 +39,8 @@ ggplot(titanic_data, aes(Sex)) + geom_bar() +
 
 ### 8.) Calculate the total number of passengers:
 total <- tally(titanic_data)
+
+### 8.1) Calculate the total proportion of passengers surviving.
+Survivors <- subset(titanic_data, Survived == 1)
+totalSurvivors <- tally(Survivors)
+(totalSurvivors/total)*100
