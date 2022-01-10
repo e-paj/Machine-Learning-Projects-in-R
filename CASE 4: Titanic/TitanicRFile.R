@@ -44,3 +44,10 @@ total <- tally(titanic_data)
 Survivors <- subset(titanic_data, Survived == 1)
 totalSurvivors <- tally(Survivors)
 (totalSurvivors/total)*100
+
+### 8.2) Calculate the proportion of passengers surviving for 
+# each class of passenger.
+classSurv <- titanic_data %>% group_by(Pclass, Survived) %>%
+  summarize(number = n(), .groups="drop") %>%
+  mutate(perc = (number / sum(number))*100)
+datatable(classSurv)
