@@ -51,3 +51,10 @@ classSurv <- titanic_data %>% group_by(Pclass, Survived) %>%
   summarize(number = n(), .groups="drop") %>%
   mutate(perc = (number / sum(number))*100)
 datatable(classSurv)
+
+### 8.3) Calculate the proportion of passengers surviving for 
+# each sex category. Which sex had the highest survival rate?
+sexSurv <- titanic_data %>% group_by(Sex, Survived) %>%
+  summarise(number = n(), .groups = "drop") %>%
+  mutate(perc = (number/sum(number))*100)
+datatable(sexSurv)
