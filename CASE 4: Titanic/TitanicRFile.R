@@ -75,3 +75,24 @@ agesexSurv <- titanic_data %>% group_by(age, Sex, Survived) %>%
   summarise(number= n(), .groups = 'drop') %>%
   mutate(perc = (number/sum(number))*100)
 datatable(agesexSurv)
+
+### 8.6) Calculate the proportion of passengers surviving for each 
+# age/sex/class category. Which group had the highest mortality in 
+# this disaster. Why?
+survivors1 <- filter(titanic_data, Pclass == 1)
+agesexClass1 <- survivors1 %>% group_by(age, Sex, Survived) %>%
+  summarise(number=n(), .groups = "drop") %>%
+  mutate(perc = (number/sum(number))*100)
+datatable(agesexClass1)
+
+survivors2 <- filter(titanic_data, Pclass == 2)
+agesexClass2 <- survivors2 %>% group_by(age, Sex, Survived) %>%
+  summarise(number=n(), .groups = "drop") %>%
+  mutate(perc = (number/sum(number))*100)
+datatable(agesexClass2)
+
+survivors3 <- filter(titanic_data, Pclass == 3)
+agesexClass3 <- survivors3 %>% group_by(age, Sex, Survived) %>%
+  summarise(number=n(), .groups = "drop") %>%
+  mutate(perc = (number/sum(number))*100)
+datatable(agesexClass3)
