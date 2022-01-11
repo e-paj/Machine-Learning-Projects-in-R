@@ -106,3 +106,10 @@ datatable(adultClass)
 
 ggplot(adults, aes(Pclass, fill=Sex)) + geom_bar() +
   ggtitle("Adult Female and Male Passengers by Class")
+
+# compare the number of men in each class
+men <- filter(titanic_data, Sex == "male", age == 1)
+ggplot(men, aes(Pclass)) + geom_bar(fill="red") + 
+  ggtitle("Adult Male Passengers by Class")
+ggplot(men, aes(Pclass,fill=factor(Survived))) + geom_bar() +
+  ggtitle("Adult Male Survival Rates by Class")
