@@ -96,3 +96,13 @@ agesexClass3 <- survivors3 %>% group_by(age, Sex, Survived) %>%
   summarise(number=n(), .groups = "drop") %>%
   mutate(perc = (number/sum(number))*100)
 datatable(agesexClass3)
+
+### 8.65) Explanation for 8.6
+adults <- filter(titanic_data, age == 1)
+adultClass <- adults %>% group_by(Pclass, Sex) %>%
+  summarise(number = n(), .groups = 'drop') %>%
+  mutate(perc = (number/sum(number))*100)
+datatable(adultClass)
+
+ggplot(adults, aes(Pclass, fill=Sex)) + geom_bar() +
+  ggtitle("Adult Female and Male Passengers by Class")
