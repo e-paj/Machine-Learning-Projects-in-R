@@ -19,3 +19,9 @@
 - [![Screenshot-261.png](https://i.postimg.cc/MH8d4tK1/Screenshot-261.png)](https://postimg.cc/XGQfBf5v)
 * There were more female passengers than male ones.
 - [![Screenshot-262.png](https://i.postimg.cc/GtJq1YHV/Screenshot-262.png)](https://postimg.cc/n9rv4XKG)
+
+### Proportion Calculation
+* Proportion of passengers surviving for each sex category
+* Proportion of passengers surviving for each age category
+* Proportion of passengers surviving for each age/sex category (i.e., for adult males, child males, adult females, child females)
+* Proportion of passengers surviving for each age/sex/class category
