@@ -31,3 +31,4 @@
 [![Screenshot-285.png](https://i.postimg.cc/k5kRq5RP/Screenshot-285.png)](https://postimg.cc/3yFxZYZt)
 * Proportion of passengers surviving for each age/sex/class category
 [![Screenshot-286.png](https://i.postimg.cc/zvPrYy3n/Screenshot-286.png)](https://postimg.cc/PvZcmrWx)
+[![Screenshot-287.png](https://i.postimg.cc/CMvYqQJz/Screenshot-287.png)](https://postimg.cc/z3R9mpsr)
