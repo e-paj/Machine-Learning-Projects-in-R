@@ -26,4 +26,5 @@
 * Proportion of passengers surviving for each sex category
 [![Screenshot-283.png](https://i.postimg.cc/jdr6yM5Y/Screenshot-283.png)](https://postimg.cc/bd32hHkm)
 * Proportion of passengers surviving for each age/sex category (i.e., for adult males, child males, adult females, child females)
+[![Screenshot-284.png](https://i.postimg.cc/Bn717pq6/Screenshot-284.png)](https://postimg.cc/dhd1L8ZP)
 * Proportion of passengers surviving for each age/sex/class category
