@@ -1,6 +1,6 @@
 # 🚢 Titanic Survival 🚢
 
-**💡 Objective**: To create a model that would predict if a passenger would have survive on the Titanic or not.
+**💡 Objective**: To gain insights about the data regarding the proportion of passengers that survived aboard Titanic based on their age, class, and sex.
 
 **📅 Date**: January 04 - 
 
