@@ -22,6 +22,7 @@
 
 ### Proportion Calculation
 * Proportion of passengers surviving for each sex category
+- [![Screenshot-282.png](https://i.postimg.cc/m2GkmqCV/Screenshot-282.png)](https://postimg.cc/yWv7dLfS)
 * Proportion of passengers surviving for each age category
 * Proportion of passengers surviving for each age/sex category (i.e., for adult males, child males, adult females, child females)
 * Proportion of passengers surviving for each age/sex/class category
