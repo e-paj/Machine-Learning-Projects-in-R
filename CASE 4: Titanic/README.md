@@ -12,13 +12,13 @@
 ### Distribution of each attribute
 * 0 = Died, 1 = Survived
 * Majority of the passengers died.
-[![Screenshot-259.png](https://i.postimg.cc/kgMhqjNc/Screenshot-259.png)](https://postimg.cc/YhVxxzsG)
+[![Screenshot-283.png](https://i.postimg.cc/MHZ9bt6D/Screenshot-283.png)](https://postimg.cc/mzq3TYFz)
 * Most of the passengers are in their late teens to their 30s.
-[![Screenshot-260.png](https://i.postimg.cc/52PK0wnM/Screenshot-260.png)](https://postimg.cc/jD743np8)
+[![Screenshot-287.png](https://i.postimg.cc/NFNpNTLw/Screenshot-287.png)](https://postimg.cc/2LZQy14H)
 * Majority of the passengers occupied the third class.
-[![Screenshot-261.png](https://i.postimg.cc/MH8d4tK1/Screenshot-261.png)](https://postimg.cc/XGQfBf5v)
+[![Screenshot-288.png](https://i.postimg.cc/8kwKP84n/Screenshot-288.png)](https://postimg.cc/F1dgDB2j)
 * There were more female passengers than male ones.
-[![Screenshot-262.png](https://i.postimg.cc/GtJq1YHV/Screenshot-262.png)](https://postimg.cc/n9rv4XKG)
+[![Screenshot-290.png](https://i.postimg.cc/hP52T9HL/Screenshot-290.png)](https://postimg.cc/tYFdHVRJ)
 
 ### Proportion Calculation
 * Proportion of passengers surviving for each class category (*0=Died, 1=Survived*)
