@@ -25,7 +25,7 @@
 [![Screenshot-282.png](https://i.postimg.cc/m2GkmqCV/Screenshot-282.png)](https://postimg.cc/yWv7dLfS)
 * Proportion of passengers surviving for each sex category
 [![Screenshot-283.png](https://i.postimg.cc/jdr6yM5Y/Screenshot-283.png)](https://postimg.cc/bd32hHkm)
-* Proportion of passengers surviving for each age category 
+* Proportion of passengers surviving for each age category (*0 = passengers age < 18, 1 = passengers age >= 18*)
 [![Screenshot-284.png](https://i.postimg.cc/Bn717pq6/Screenshot-284.png)](https://postimg.cc/dhd1L8ZP)
 * Proportion of passengers surviving for each age/sex category (i.e., for adult males, child males, adult females, child females)
 [![Screenshot-285.png](https://i.postimg.cc/k5kRq5RP/Screenshot-285.png)](https://postimg.cc/3yFxZYZt)
