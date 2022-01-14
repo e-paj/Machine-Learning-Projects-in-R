@@ -2,7 +2,7 @@
 
 **💡 Objective**: To gain insights about the data regarding the proportion of passengers that survived aboard Titanic based on their age, class, and sex.
 
-**📅 Date**: January 04 - 
+**📅 Date**: January 04 - 14
 
 **🔢 Dataset**: https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html
 
