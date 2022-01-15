@@ -24,4 +24,4 @@ Following are the projects/case studies I have done in the Machine Learning Fiel
 | :------: | :-------------: |
 | [Uber Analysis](https://github.com/e-paj/Machine-Learning-Projects-in-R/tree/main/CASE%201:%20Uber%20Analysis) | Implementation of ggplot library to visualize insights about Uber data. |
 | [Hotel Bookings](https://github.com/e-paj/Machine-Learning-Projects-in-R/tree/main/CASE%202:%20Hotel%20Bookings) | ggplot2 library used to analyze and visualize hotel demand bookings |
-| [Titanic]() | Implement ggplot and dplyr library to manipulate and visuallize data insights on the survival rates of passengers aborad the Titanic |
+| [Titanic](https://github.com/e-paj/Machine-Learning-Projects-in-R/tree/main/CASE%204:%20Titanic) | Implement ggplot and dplyr library to manipulate and visuallize data insights on the survival rates of passengers aborad the Titanic |
