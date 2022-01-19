@@ -17,3 +17,10 @@ colSums(is.na(bank_data))
 
 ### 6.) Statistical Measures
 summary(bank_data)
+
+### 7.) Visualizing Age Feature
+ggplot(bank_data, aes(age)) + geom_bar(fill="blue") +
+  ggtitle("Histogram of Customers' Age")
+ggplot(bank_data, aes(age, fill=loan)) + geom_bar() +
+  ggtitle("Distribution of Customers with Loans bases on Age")
+
