@@ -1,4 +1,6 @@
 ### 1.) Import important packages
+library(ggplot2)
+library(dplyr)
 
 ### 2.) Upload Data
 bank_data <- read.csv("~/Data Science/Data/bank.csv")
