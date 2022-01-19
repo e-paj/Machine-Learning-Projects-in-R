@@ -24,3 +24,10 @@ ggplot(bank_data, aes(age)) + geom_bar(fill="blue") +
 ggplot(bank_data, aes(age, fill=loan)) + geom_bar() +
   ggtitle("Distribution of Customers with Loans bases on Age")
 
+### 8.) Visualizing Pdays Attribute
+ggplot(bank_data, aes(pdays)) + geom_bar(fill='red') +
+  ggtitle("Histogram of Pdays")
+data = subset(bank_data, pdays <= 400)
+ggplot(data, aes(pdays)) + geom_bar(fill='red') +
+  ggtitle("New Histogram of Pdays ")
+
