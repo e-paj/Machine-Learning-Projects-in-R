@@ -31,3 +31,8 @@ data = subset(bank_data, pdays <= 400)
 ggplot(data, aes(pdays)) + geom_bar(fill='red') +
   ggtitle("New Histogram of Pdays ")
 
+### 9.) Visualizing Duration Attribute
+ggplot(bank_data, aes(duration)) + geom_bar(fill='purple') +
+  ggtitle("Histogram of Duration")
+ggplot(bank_data, aes(duration, fill=contact)) + geom_bar() +
+  xlim(0, 2500) + ggtitle("Histogram of Contact based on Duration") 
