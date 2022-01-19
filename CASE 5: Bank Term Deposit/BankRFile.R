@@ -36,3 +36,10 @@ ggplot(bank_data, aes(duration)) + geom_bar(fill='purple') +
   ggtitle("Histogram of Duration")
 ggplot(bank_data, aes(duration, fill=contact)) + geom_bar() +
   xlim(0, 2500) + ggtitle("Histogram of Contact based on Duration") 
+
+### 10.) Contact Attribute
+ggplot(bank_data, aes(contact, fill=contact)) + geom_bar() +
+  scale_fill_manual("legend", 
+                    values = c("cellular" = "red", "telephone" = "orange", 
+                               "unknown" = "blue")) +
+  ggtitle("Tally of Different Types of Contact")
