@@ -43,3 +43,8 @@ ggplot(bank_data, aes(contact, fill=contact)) + geom_bar() +
                     values = c("cellular" = "red", "telephone" = "orange", 
                                "unknown" = "blue")) +
   ggtitle("Tally of Different Types of Contact")
+
+### 11.) Previous Attribute
+ggplot(bank_data, aes(previous, fill=contact)) + geom_bar() +
+  ggtitle("Histogram of Previous based on Contact")
+dplyr::count(bank_data, previous, sort= TRUE)
