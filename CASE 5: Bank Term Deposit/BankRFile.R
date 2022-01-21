@@ -48,3 +48,11 @@ ggplot(bank_data, aes(contact, fill=contact)) + geom_bar() +
 ggplot(bank_data, aes(previous, fill=contact)) + geom_bar() +
   ggtitle("Histogram of Previous based on Contact")
 dplyr::count(bank_data, previous, sort= TRUE)
+
+### 12.) Job Attribute
+jobData <- bank_data %>% group_by(job) %>% 
+  summarize(number=n())
+datatable(jobData)
+ggplot(jobData, aes(x=reorder(job,desc(number)), y=number, fill=job)) + 
+  geom_bar(stat='identity') + ggtitle("Tally of the Jobs of the Customers") +
+  theme(axis.text.x = element_text(angle=90))
