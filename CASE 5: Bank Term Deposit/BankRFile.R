@@ -56,3 +56,12 @@ datatable(jobData)
 ggplot(jobData, aes(x=reorder(job,desc(number)), y=number, fill=job)) + 
   geom_bar(stat='identity') + ggtitle("Tally of the Jobs of the Customers") +
   theme(axis.text.x = element_text(angle=90))
+
+### 13.) Education Attribute
+eduData <- bank_data %>% group_by(education) %>%
+  summarise(Total = n())
+datatable(eduData)
+ggplot(eduData, aes(x=reorder(education, desc(Total)), y=Total, 
+                    fill=education)) + geom_bar(stat="identity") +
+  ggtitle("Tally of the Level of Education Each Customer Have") +
+  theme(axis.text.x = element_text(angle = 45))
