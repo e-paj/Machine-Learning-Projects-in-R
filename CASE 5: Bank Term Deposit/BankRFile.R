@@ -82,3 +82,8 @@ ggplot(jobDef, aes(x=reorder(job, desc(Total)), y= Total, fill=default)) +
   geom_bar(position = 'dodge', stat='identity') +
   ggtitle("Tally of Customers that Defaulted Based on Job") +
   theme(axis.text.x = element_text(angle = 45))
+
+### 15.) Default Attribute
+ggplot(bank_data, aes(default, fill=default)) + geom_bar() +
+  scale_fill_manual("legend", values = c("no" = "red", "yes" = "orange")) +
+  ggtitle("Tally of Default")
