@@ -65,3 +65,11 @@ ggplot(eduData, aes(x=reorder(education, desc(Total)), y=Total,
                     fill=education)) + geom_bar(stat="identity") +
   ggtitle("Tally of the Level of Education Each Customer Have") +
   theme(axis.text.x = element_text(angle = 45))
+
+eduDef <- bank_data %>% group_by(education, default) %>%
+  summarise(Total=n(), .groups="drop")
+datatable(eduDef)
+ggplot(eduDef, aes(x=reorder(education, desc(Total)), y=Total,fill= default)) + 
+         geom_bar(position='dodge',stat="identity") +
+  ggtitle("Tally of Customers that Defaulted Based on Education") 
+
