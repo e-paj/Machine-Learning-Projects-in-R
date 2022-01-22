@@ -1,6 +1,7 @@
 ### 1.) Import important packages
 library(ggplot2)
 library(dplyr)
+library(DT)
 
 ### 2.) Upload Data
 bank_data <- read.csv("~/Data Science/Data/bank.csv")
@@ -73,3 +74,11 @@ ggplot(eduDef, aes(x=reorder(education, desc(Total)), y=Total,fill= default)) +
          geom_bar(position='dodge',stat="identity") +
   ggtitle("Tally of Customers that Defaulted Based on Education") 
 
+### 14.) Job Attribute
+jobDef <- bank_data %>% group_by(job, default) %>%
+  summarise(Total=n(), .groups='drop') 
+datatable(jobDef)  
+ggplot(jobDef, aes(x=reorder(job, desc(Total)), y= Total, fill=default)) +
+  geom_bar(position = 'dodge', stat='identity') +
+  ggtitle("Tally of Customers that Defaulted Based on Job") +
+  theme(axis.text.x = element_text(angle = 45))
