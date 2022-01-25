@@ -100,3 +100,6 @@ new_bank <- bank_new %>% select(-c("job","marital","education","default",
                                       "housing","loan","contact","month",
                                       "poutcome","deposit"))
 dim(new_bank)
+
+### 17.) Scaling new data
+Sc_bank <- scale(new_bank)
