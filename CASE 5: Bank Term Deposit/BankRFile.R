@@ -2,6 +2,9 @@
 library(ggplot2)
 library(dplyr)
 library(DT)
+library(fastDummies)
+library(cluster)
+library(factoextra)
 
 ### 2.) Upload Data
 bank_data <- read.csv("~/Data Science/Data/bank.csv")
