@@ -90,3 +90,13 @@ ggplot(jobDef, aes(x=reorder(job, desc(Total)), y= Total, fill=default)) +
 ggplot(bank_data, aes(default, fill=default)) + geom_bar() +
   scale_fill_manual("legend", values = c("no" = "red", "yes" = "orange")) +
   ggtitle("Tally of Default")
+
+### 16.) Get Dummies for Attributes
+bank_new <- dummy_cols(bank_data, select_columns = c("job","marital","education",
+                                                     "default","housing","loan",
+                                                     "contact","month","poutcome",
+                                                     "deposit"))
+new_bank <- bank_new %>% select(-c("job","marital","education","default",
+                                      "housing","loan","contact","month",
+                                      "poutcome","deposit"))
+dim(new_bank)
