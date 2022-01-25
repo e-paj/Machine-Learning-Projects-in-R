@@ -103,3 +103,8 @@ dim(new_bank)
 
 ### 17.) Scaling new data
 Sc_bank <- scale(new_bank)
+
+### 18.) Optimal # of Clusters
+set.seed(123)
+fviz_nbclust(Sc_bank, kmeans, method = "wss")
+
