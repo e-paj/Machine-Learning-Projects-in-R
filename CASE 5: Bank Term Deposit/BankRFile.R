@@ -109,4 +109,8 @@ set.seed(123)
 fviz_nbclust(Sc_bank, kmeans, method = "wss")
 # Elbow is at 2.
 
-
+### 19.) KMeans Algorithm with k=2
+set.seed(123)
+Md1 <- kmeans(Sc_bank, 2, nstart=25)
+print(Md1)
+fviz_cluster(Md1, data=Sc_bank)
