@@ -104,12 +104,16 @@ dim(new_bank)
 ### 17.) Scaling new data
 Sc_bank <- scale(new_bank)
 
-### 18.) Optimal # of Clusters
+### 18.) Correlation between Attributes
+corr <- cor(Sc_bank, method="pearson")
+corrplot(corr, method="color", order="alphabet")
+
+### 19.) Optimal # of Clusters
 set.seed(123)
 fviz_nbclust(Sc_bank, kmeans, method = "wss")
 # Elbow is at 2.
 
-### 19.) KMeans Algorithm with k=2
+### 20.) KMeans Algorithm with k=2
 set.seed(123)
 Md1 <- kmeans(Sc_bank, 2, nstart=25)
 print(Md1)
