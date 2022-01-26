@@ -107,4 +107,6 @@ Sc_bank <- scale(new_bank)
 ### 18.) Optimal # of Clusters
 set.seed(123)
 fviz_nbclust(Sc_bank, kmeans, method = "wss")
+# Elbow is at 2.
+
 
