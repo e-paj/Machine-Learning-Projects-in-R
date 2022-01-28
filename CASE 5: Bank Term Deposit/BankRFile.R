@@ -5,6 +5,7 @@ library(DT)
 library(fastDummies)
 library(cluster)
 library(factoextra)
+library(corrplot)
 
 ### 2.) Upload Data
 bank_data <- read.csv("~/Data Science/Data/bank.csv")
