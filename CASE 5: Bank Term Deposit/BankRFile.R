@@ -92,6 +92,15 @@ ggplot(bank_data, aes(default, fill=default)) + geom_bar() +
   scale_fill_manual("legend", values = c("no" = "red", "yes" = "orange")) +
   ggtitle("Tally of Default")
 
+### 16.) Deposit Attribute
+month_dep <- bank_data %>% group_by(month, deposit) %>%
+  summarise(Total = n(),.groups="drop") %>%
+  mutate(perc=(Total/sum(Total))*100)
+datatable(month_dep)
+ggplot(month_dep, aes(x=month, y=Total, fill=deposit)) +
+  geom_bar(position = "dodge", stat="identity") +
+  ggtitle("Tally of Customers that Made a Deposit Each Month")
+
 ### 16.) Get Dummies for Attributes
 bank_new <- dummy_cols(bank_data, select_columns = c("job","marital","education",
                                                      "default","housing","loan",
