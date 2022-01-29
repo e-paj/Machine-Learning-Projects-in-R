@@ -101,7 +101,7 @@ ggplot(month_dep, aes(x=month, y=Total, fill=deposit)) +
   geom_bar(position = "dodge", stat="identity") +
   ggtitle("Tally of Customers that Made a Deposit Each Month")
 
-### 16.) Get Dummies for Attributes
+### 17.) Get Dummies for Attributes
 bank_new <- dummy_cols(bank_data, select_columns = c("job","marital","education",
                                                      "default","housing","loan",
                                                      "contact","month","poutcome",
@@ -111,19 +111,19 @@ new_bank <- bank_new %>% select(-c("job","marital","education","default",
                                       "poutcome","deposit"))
 dim(new_bank)
 
-### 17.) Scaling new data
+### 18.) Scaling new data
 Sc_bank <- scale(new_bank)
 
-### 18.) Correlation between Attributes
+### 19.) Correlation between Attributes
 corr <- cor(Sc_bank, method="pearson")
 corrplot(corr, method="color", order="alphabet")
 
-### 19.) Optimal # of Clusters
+### 20.) Optimal # of Clusters
 set.seed(123)
 fviz_nbclust(Sc_bank, kmeans, method = "wss")
 # Elbow is at 2.
 
-### 20.) KMeans Algorithm with k=2
+### 21.) KMeans Algorithm with k=2
 set.seed(123)
 Md1 <- kmeans(Sc_bank, 2, nstart=25)
 print(Md1)
