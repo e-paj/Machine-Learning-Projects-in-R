@@ -119,6 +119,20 @@ ggplot(bank_data, aes(campaign)) + geom_bar(fill="gray") +
   ggtitle('Calls Received in the Marketing Campaign') +
   labs(y='Potential Clients Count')
 
+### 18.) Different Aspects of the Analysis
+# Load Function
+source("http://pcwww.liv.ac.uk/~william/R/crosstab.r")
+
+months_example <- crosstab(bank_data, row.vars = "deposit", col.vars = "month",
+                           type="f")
+
+# Gives the proportion of subscribed term deposit
+mytable <- table(bank_data$month, bank_data$deposit)
+prop.table(mytable, 1)
+
+# Gives the amount of suscribed vs non-suscribed term deposits accounts per month.
+months_example
+
 ### 18.) Get Dummies for Attributes
 bank_new <- dummy_cols(bank_data, select_columns = c("job","marital","education",
                                                      "default","housing","loan",
