@@ -101,7 +101,25 @@ ggplot(month_dep, aes(x=month, y=Total, fill=deposit)) +
   geom_bar(position = "dodge", stat="identity") +
   ggtitle("Tally of Customers that Made a Deposit Each Month")
 
-### 17.) Get Dummies for Attributes
+### 17.) Month & Age Attribute
+
+# Graph Employee Satisfaction
+ggplot(bank_data, aes(month)) + 
+  geom_bar(fill="coral") +
+  ggtitle('Months of Marketing Activity Distribution') +
+  labs(y='Potential Clients Count', x= "Month")
+
+# Graph Employee Evaluation
+ggplot(bank_data, aes(age)) + geom_bar(fill="sky blue") +
+  ggtitle("Age of Potentical Clients Distribution") + 
+  labs(y='Potential Clients Count')
+
+# Campaigns
+ggplot(bank_data, aes(campaign)) + geom_bar(fill="gray") +
+  ggtitle('Calls Received in the Marketing Campaign') +
+  labs(y='Potential Clients Count')
+
+### 18.) Get Dummies for Attributes
 bank_new <- dummy_cols(bank_data, select_columns = c("job","marital","education",
                                                      "default","housing","loan",
                                                      "contact","month","poutcome",
@@ -111,10 +129,10 @@ new_bank <- bank_new %>% select(-c("job","marital","education","default",
                                       "poutcome","deposit"))
 dim(new_bank)
 
-### 18.) Scaling new data
+### 19.) Scaling new data
 Sc_bank <- scale(new_bank)
 
-### 19.) Correlation between Attributes
+### 20.) Correlation between Attributes
 corr <- cor(Sc_bank, method="pearson")
 corrplot(corr, method="color", order="alphabet")
 
