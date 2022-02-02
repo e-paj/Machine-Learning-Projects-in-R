@@ -143,30 +143,3 @@ ggplot(values, aes(x="",y=all, fill=labels)) + geom_bar(stat='identity') +
   coord_polar("y",start=0) +
   geom_text(aes(label=all), position = position_stack(vjust = 0.5))
 
-### 18.) Get Dummies for Attributes
-bank_new <- dummy_cols(bank_data, select_columns = c("job","marital","education",
-                                                     "default","housing","loan",
-                                                     "contact","month","poutcome",
-                                                     "deposit"))
-new_bank <- bank_new %>% select(-c("job","marital","education","default",
-                                      "housing","loan","contact","month",
-                                      "poutcome","deposit"))
-dim(new_bank)
-
-### 19.) Scaling new data
-Sc_bank <- scale(new_bank)
-
-### 20.) Correlation between Attributes
-corr <- cor(Sc_bank, method="pearson")
-corrplot(corr, method="color", order="alphabet")
-
-### 20.) Optimal # of Clusters
-set.seed(123)
-fviz_nbclust(Sc_bank, kmeans, method = "wss")
-# Elbow is at 2.
-
-### 21.) KMeans Algorithm with k=2
-set.seed(123)
-Md1 <- kmeans(Sc_bank, 2, nstart=25)
-print(Md1)
-fviz_cluster(Md1, data=Sc_bank)
