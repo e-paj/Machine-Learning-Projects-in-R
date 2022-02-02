@@ -128,6 +128,15 @@ months_example$prop.col
 # Gives the amount of suscribed vs non-suscribed term deposits accounts per month.
 months_example
 
+# We need to take the values into a list format 
+nodeposit <- c(202, 335, 28, 346, 1899, 676, 887, 831, 50, 69, 540, 10)
+deposit <- c(142, 441, 248, 577, 925, 546, 627, 688, 269, 323, 403, 100)
+all <- c(344, 776, 276, 923, 2824, 1222, 1514, 1519, 319, 392, 943, 110)
+
+labels <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+          'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+values <- data.frame(labels, nodeposit, deposit, all)
+
 ### 18.) Get Dummies for Attributes
 bank_new <- dummy_cols(bank_data, select_columns = c("job","marital","education",
                                                      "default","housing","loan",
