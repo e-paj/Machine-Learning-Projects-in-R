@@ -6,6 +6,7 @@ library(fastDummies)
 library(cluster)
 library(factoextra)
 library(corrplot)
+library(gmodels)
 
 ### 2.) Upload Data
 bank_data <- read.csv("~/Data Science/Data/bank.csv")
@@ -136,6 +137,11 @@ all <- c(344, 776, 276, 923, 2824, 1222, 1514, 1519, 319, 392, 943, 110)
 labels <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
           'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
 values <- data.frame(labels, nodeposit, deposit, all)
+
+ggplot(values, aes(x="",y=all, fill=labels)) + geom_bar(stat='identity') + 
+  ggtitle("# of Potential Clients Targeted per Month") +
+  coord_polar("y",start=0) +
+  geom_text(aes(label=all), position = position_stack(vjust = 0.5))
 
 ### 18.) Get Dummies for Attributes
 bank_new <- dummy_cols(bank_data, select_columns = c("job","marital","education",
