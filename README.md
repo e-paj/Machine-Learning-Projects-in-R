@@ -16,6 +16,7 @@ The aim of this is to showcase Machine Learning Projects that I did in R!!
 3. Hotel Bookings ✔
 4. MNIST Handwritten ↔
 5. Titanic ✔
+6. Bank Term Deposit ↔
 
 ## Description:
 Following are the projects/case studies I have done in the Machine Learning Field and its descriptions. 
